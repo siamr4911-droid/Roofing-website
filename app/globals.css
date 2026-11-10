@@ -1,0 +1,31 @@
+
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-inter);
+  --color-primary: #EE7731;
+  --color-button: #222E48;
+  --color-section: #F2F8FF;
+}
+
+:root {
+  --background: #FFFFFF;
+  --foreground: #222E48;
+  --container-width: 1440px;
+  --section-spacing: 80px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
