@@ -33,11 +33,17 @@ function ProjectCard({
 
         <a
           href="#contact"
-          className="mt-4 inline-flex items-center gap-3 rounded-full bg-white px-4 py-2 text-xs font-medium text-button"
+          className="mt-4 inline-flex h-[64px] w-[201px] items-center justify-between rounded-full bg-white pl-4 pr-1 text-sm font-medium text-button"
         >
           View Details
           <span className="flex h-7 w-7 items-center justify-center rounded-full bg-primary text-button">
-            ↗
+            <Image
+              src="/icons/arrow.png"
+              alt=""
+              width={24}
+              height={24}
+              className="-rotate-45"
+            />
           </span>
         </a>
       </div>

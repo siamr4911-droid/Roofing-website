@@ -68,7 +68,13 @@ export default function Hero() {
               >
                 Contact Us
                 <span className="flex h-10 w-10 items-center justify-center rounded-full bg-[#EE7731] text-xl text-white">
-                  ↗
+                  <Image
+                    src="/icons/arrow.png"
+                    alt=""
+                    width={24}
+                    height={24}
+                    className="-rotate-45"
+                  />
                 </span>
               </a>
 

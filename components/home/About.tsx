@@ -73,7 +73,13 @@ export default function About() {
             >
               Learn More
               <span className="flex h-10 w-10 items-center justify-center rounded-full bg-primary text-lg text-button">
-                ↗
+                <Image
+                  src="/icons/arrow.png"
+                  alt=""
+                  width={24}
+                  height={24}
+                  className="-rotate-45"
+                />
               </span>
             </a>
           </div>
@@ -128,7 +134,13 @@ export default function About() {
               <br />
               EXPERTS
               <br />
-              ↗
+              <Image
+                src="/icons/arrow.png"
+                alt=""
+                width={12}
+                height={12}
+                className="-rotate-45"
+              />
             </span>
           </div>
         </div>

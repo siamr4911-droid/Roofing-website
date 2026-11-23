@@ -97,7 +97,13 @@ export default function FAQ() {
               Contact Us
 
               <span className="flex h-8 w-8 items-center justify-center rounded-full bg-primary text-lg text-button">
-                ↗
+                <Image
+                  src="/icons/arrow.png"
+                  alt=""
+                  width={24}
+                  height={24}
+                  className="-rotate-45"
+                />
               </span>
             </a>
 

@@ -1,4 +1,6 @@
 
+import Image from "next/image";
+
 const locations = [
   "Austin, TX",
   "San Antonio, TX",
@@ -54,7 +56,13 @@ export default function Location() {
               Get a free quote
 
               <span className="flex h-10 w-10 items-center justify-center rounded-full bg-primary text-xl text-button">
-                ↗
+                <Image
+                  src="/icons/arrow.png"
+                  alt=""
+                  width={24}
+                  height={24}
+                  className="-rotate-45"
+                />
               </span>
             </a>
 
@@ -102,7 +110,13 @@ export default function Location() {
               </div>
 
               <span className="text-lg text-button transition-transform group-hover:-translate-y-1 group-hover:translate-x-1">
-                ↗
+                <Image
+                  src="/icons/arrow.png"
+                  alt=""
+                  width={18}
+                  height={18}
+                  className="-rotate-45 brightness-0"
+                />
               </span>
 
             </a>

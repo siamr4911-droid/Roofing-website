@@ -107,7 +107,13 @@ export default function Services() {
               </p>
 
               <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary text-xl text-button transition-transform group-hover:rotate-45">
-                ↗
+                <Image
+                  src="/icons/arrow.png"
+                  alt=""
+                  width={24}
+                  height={24}
+                  className="-rotate-45"
+                />
               </div>
             </a>
           ))}

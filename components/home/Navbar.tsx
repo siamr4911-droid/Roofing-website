@@ -1,7 +1,9 @@
 
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
+
 
 const links = [
   { label: "Home", href: "#home" },
@@ -10,6 +12,7 @@ const links = [
   { label: "How It Works", href: "#process" },
   { label: "Location", href: "#locations" },
   { label: "Contact", href: "#contact" },
+  
 ];
 
 
@@ -55,7 +58,13 @@ export default function Navbar() {
         >
           Get a Quote
           <span className="flex h-9 w-9 items-center justify-center rounded-full bg-primary text-lg text-button">
-            ↗
+            <Image
+              src="/icons/arrow.png"
+              alt=""
+              width={24}
+              height={24}
+              className="-rotate-45"
+            />
           </span>
         </a>
 
@@ -85,7 +94,14 @@ export default function Navbar() {
               </a>
             ))}
             <a href="#contact" onClick={() => setOpen(false)}>
-              Get a Quote ↗
+              Get a Quote{" "}
+              <Image
+                src="/icons/arrow.png"
+                alt=""
+                width={16}
+                height={16}
+                className="inline-block -rotate-45 brightness-0 align-[-3px]"
+              />
             </a>
           </div>
         </div>

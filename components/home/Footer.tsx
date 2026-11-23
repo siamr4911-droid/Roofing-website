@@ -1,4 +1,6 @@
 
+import Image from "next/image";
+
 const quickLinks = [
   { name: "Home", href: "#home" },
   { name: "About Us", href: "#about" },
@@ -47,7 +49,13 @@ export default function Footer() {
               Contact Us
 
               <span className="flex h-10 w-10 items-center justify-center rounded-full bg-primary text-xl text-button">
-                ↗
+                <Image
+                  src="/icons/arrow.png"
+                  alt=""
+                  width={24}
+                  height={24}
+                  className="-rotate-45"
+                />
               </span>
             </a>
 
